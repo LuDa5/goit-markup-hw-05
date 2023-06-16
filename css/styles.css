@@ -75,6 +75,25 @@ font-weight: 500;
         line-height: 1.50;
         letter-spacing: 0.02em;
         color: var(--second-text-colorr);
+} 
+.btn {
+    font-family: "Roboto",
+            sans-serif;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.50;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background: #4D5AE5;
+        cursor: pointer;
+        border-radius: 4px;
+        min-width: 169px;
+        height: 56px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: background-color var(--transition);
 }
  /* ---------HEADER---------- */
 .header {
@@ -205,7 +224,7 @@ margin-right: auto;
     margin-right: auto;
 }
 .hero-btn {
-    font-family: "Roboto",
+    /* font-family: "Roboto",
         sans-serif;
         border: none;
     font-weight: 500;
@@ -221,7 +240,7 @@ margin-right: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: background-color var(--transition);
+    transition: background-color var(--transition); */
 }
 .hero-btn:is(:hover, :focus) {
 background-color: #404BBF
@@ -744,6 +763,7 @@ display: block;
     transform: translateY(-50%);
     transition: fill var(--transition);
 }
+
 .modal-textarea {
     width: 100%;
         height: 120px;
@@ -753,13 +773,19 @@ display: block;
         padding-top: 8px;
         padding-left: 16px;
         padding-right: 18px;
-        font-size: 12px;
+        /* font-size: 12px;
             line-height: 1.17;
             letter-spacing: 0.04em;
-            color: rgba(46, 47, 66, 0.4);
+            color: rgba(46, 47, 66, 0.4); */
         outline: transparent;
         resize: none;
        
+}
+..modal-textarea::placeholder {
+    font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
 }
 
 .check-text {
@@ -768,11 +794,11 @@ display: block;
         letter-spacing: 0.04em;
         color: #8E8F99;
         display: flex;
-        align-items: center;
 }
 .check-text a {
     color: #4D5AE5;
     text-decoration: underline;
+   
 }
 .check-text span {
     width: 16px;
@@ -780,9 +806,40 @@ display: block;
     border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 2px;
 margin-right: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+
 }
 .input-check:checked + .check-text span {
     background-color: #4D5AE5;
 border: none;
+fill: #ffffff;
+}
+
+.check-btn {
+/* font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #4D5AE5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        display: block;
+            padding: 16px 32px;
+            min-width: 169px;
+    height: 56px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     transition: background-color var(--transition); */
+    margin-top: 24px;
+}
+.check-btn:focus {
+    background-color: #404BBF
 }
 
