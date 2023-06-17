@@ -793,7 +793,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 .modal-field {
 margin-bottom: 8px;
 }
-.modal-textarea-comment- {
+.modal-textarea-comment {
 margin-bottom: 16px;
 }
 .form-label {
@@ -817,7 +817,6 @@ display: block;
         border-radius: 4px;
         background-color: transparent;
     padding: 8px 16px;
-        /* padding-right: 18px; */
         font-size: 12px;
             line-height: 1.17;
             letter-spacing: 0.04em;
