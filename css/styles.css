@@ -634,7 +634,7 @@ gap: 16px;
 }
 .footer-form {
     display: flex;
-    gap 24px;
+    gap: 24px;
 }
 .footer-bottom {
 margin-left: 96px;
@@ -785,14 +785,13 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     stroke: #111111;
     position: absolute;
     left: 16px;
-    left: 19px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill var(--transition);
 
 }
 .modal-field {
-margin-bottom: 16px;
+margin-bottom: 8px;
 }
 
 .form-label {
@@ -826,7 +825,7 @@ display: block;
         transition: border-color var(--transition)
        
 }
-..modal-textarea:focus {
+.modal-textarea:focus {
     border-color: #4D5AE5;
 }
 .modal-textarea::placeholder {
@@ -866,10 +865,10 @@ border var(--transition),
 fill var(--transition);
 }
 .check-span {
-
+display: inline-flex;
 }
 .check-soc {
-    
+
 }
 
 .input-check:checked + .check-text span {
